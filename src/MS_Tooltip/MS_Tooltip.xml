@@ -1,9 +1,9 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
-    <Script file="MyAddon.lua"/>
-    <Frame name="MyAddonFrame" toplevel="true" frameStrata="DIALOG" movable="true" enableMouse="true" hidden="true" parent="UIParent" enableKeyboard="true">
+    <Script file="MS_Tooltip.lua"/>
+    <Frame name="MS_TooltipFrame" toplevel="true" frameStrata="DIALOG" movable="true" enableMouse="true" hidden="true" parent="UIParent" enableKeyboard="true">
         <Scripts>
             <OnLoad>
-                MyAddon:OnLoad();
+                MS_Tooltip:OnLoad();
             </OnLoad>
         </Scripts>
     </Frame>

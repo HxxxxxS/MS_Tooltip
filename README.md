@@ -1,6 +1,66 @@
-# MyAddon
-An example World of Warcraft addon written for 1.13
+# MS_Tooltip
+Displays which specs should roll for MS on raid epics.
 
 ## Usage with a World of Warcraft 1.13 client:
 * Copy the contents `src` to `<wow>/_classic_/Interface/AddOns`
 * Start the client and enable the addon as usual
+
+Extracted from Google Sheets with this JS:
+```
+var table = document.querySelectorAll("tbody tr");
+var cols = table[0].querySelectorAll("td")
+var headers = [];
+for(var i = 0;i<cols.length;i++)
+{
+    headers.push(cols[i].innerText)
+}
+
+
+var data = [];
+
+for(var i = 2;i<table.length;i++)
+{
+  var row = table[i].querySelectorAll("td")
+  var url = row[0].querySelector("a").href
+  var id = url.match(/(?:item=)(\d+)/)[1]
+  var name = row[0].innerText
+  
+  var ms = []
+  var os = []
+
+  for(var j = 0;j<row.length;j++)
+  {
+    if (row[j].innerText == "MS")
+    {
+      ms.push(headers[j])
+    }
+    if (row[j].innerText == "OS")
+    {
+      os.push(headers[j])
+    }
+  }
+  data.push({id:id,name:name,ms:ms,os:os})
+}
+
+var out = ""
+
+for(var i = 0;i<data.length;i++)
+{
+    out += "["+data[i].id+"] = { -- "+data[i].name+"\n"
+  out += "    [\"MS\"] = {"
+  for(var j = 0;j<data[i].ms.length;j++)
+  {
+    out += '"'+data[i].ms[j]+'", '
+  }
+  out += "},\n"
+  out += "    [\"OS\"] = {"
+  for(var j = 0;j<data[i].os.length;j++)
+  {
+    out += '"'+data[i].os[j]+'", '
+  }
+  out += "}\n"
+  out += "},\n"
+}
+
+console.log(out)
+```
