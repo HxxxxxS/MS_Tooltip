@@ -283,6 +283,10 @@ MS_Items = {
         ["PRIO"] = {"W - Tank", "D - Tank"},
         ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance"}
     },
+    [18423] = { -- Head of Onyxia
+        ["PRIO"] = {"W - Tank", "D - Tank"},
+        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance"}
+    },
     [18879] = { -- Heavy Dark Iron Ring
         ["MS"] = {"W - Tank", "D - Tank"}
     },
