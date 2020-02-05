@@ -27,9 +27,15 @@ for(var i = 2;i<table.length;i++)
   
   var ms = []
   var os = []
+  var prio = []
 
   for(var j = 0;j<row.length;j++)
   {
+    
+    if (row[j].innerText.indexOf("Prio") > -1)
+    {
+      prio.push(headers[j])
+    }
     if (row[j].innerText == "MS")
     {
       ms.push(headers[j])
@@ -39,7 +45,7 @@ for(var i = 2;i<table.length;i++)
       os.push(headers[j])
     }
   }
-  data.push({id:id,name:name,ms:ms,os:os})
+  data.push({id:id,name:name,prio:prio,ms:ms,os:os})
 }
 
 var out = ""
@@ -47,16 +53,26 @@ var out = ""
 for(var i = 0;i<data.length;i++)
 {
     out += "["+data[i].id+"] = { -- "+data[i].name+"\n"
+  if(data[i].prio.length) {
+  out += "    [\"PRIO\"] = {"
+  for(var j = 0;j<data[i].prio.length;j++)
+  {
+    out += '"'+data[i].prio[j]+'", '
+  }
+  out += "},\n"
+  }
   out += "    [\"MS\"] = {"
   for(var j = 0;j<data[i].ms.length;j++)
   {
     out += '"'+data[i].ms[j]+'", '
   }
+  if(data[i].os.length){
   out += "},\n"
   out += "    [\"OS\"] = {"
   for(var j = 0;j<data[i].os.length;j++)
   {
     out += '"'+data[i].os[j]+'", '
+  }
   }
   out += "}\n"
   out += "},\n"
