@@ -60,8 +60,6 @@ function MS_Tooltip:ClassColor(str)
         return {0.78,0.61,0.43}
     elseif strsub(str,1,1) == "R" then -- Rogue
         return {1,0.96,0.41}
-    elseif strsub(str,1,1) == "W" then -- Warrior
-        return {0.78,0.61,0.43}
     elseif strsub(str,1,1) == "S" then -- Shaman
         return {0.00,0.44,0.87}
     elseif strsub(str,1,2) == "Pa" then -- Paladin
