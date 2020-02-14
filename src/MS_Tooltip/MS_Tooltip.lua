@@ -131,29 +131,47 @@ function MS_Tooltip:itemExists(id)
     end
 end
 
-function MS_Tooltip:length(T)
+function MS_Tooltip:Length(T)
   local count = 0
   for _ in pairs(T) do count = count + 1 end
   return count
+end
+
+function MS_Tooltip:Draw(prio, specs)
+    GameTooltip:AddLine("  "..prio..":", {1,1,1})
+    for i = 1,MS_Tooltip:Length(specs),2 do
+        if i == MS_Tooltip:Length(specs) then
+            GameTooltip:AddLine("    "..specs[i],MS_Tooltip:ClassColor(specs[i])[1],MS_Tooltip:ClassColor(specs[i])[2],MS_Tooltip:ClassColor(specs[i])[3])
+        else
+            GameTooltip:AddDoubleLine("    "..specs[i],specs[i+1],MS_Tooltip:ClassColor(specs[i])[1],MS_Tooltip:ClassColor(specs[i])[2],MS_Tooltip:ClassColor(specs[i])[3],MS_Tooltip:ClassColor(specs[i+1])[1],MS_Tooltip:ClassColor(specs[i+1])[2],MS_Tooltip:ClassColor(specs[i+1])[3])
+        end
+    end
 end
 
 function MS_Tooltip_setTooltip(self)
     local _, link = self:GetItem()
     local id = tonumber(MS_Tooltip:getItemID(MS_Tooltip:getItemString(link)))
     if not MS_Tooltip:itemExists(tonumber(id)) then return; end
-    local name = GetItemInfo(id)
     for k, o in pairs(MS_Items) do
         if id == k then
-            GameTooltip:AddLine(" ",{1,1,1})
+            GameTooltip:AddLine(" ", {1,1,1})
             GameTooltip:AddLine("Loot priority:", {1,1,1})
+            MS_Tooltip:Print(id .. " " .. MS_Tooltip:Length(o))
+            p = 0
+            p1 = 0
             for prio, specs in pairs(o) do
-                GameTooltip:AddLine("  "..prio..":", {1,1,1})
-                for i = 1,MS_Tooltip:length(specs),2 do
-                    if i == MS_Tooltip:length(specs) then
-                        GameTooltip:AddLine("    "..specs[i],MS_Tooltip:ClassColor(specs[i])[1],MS_Tooltip:ClassColor(specs[i])[2],MS_Tooltip:ClassColor(specs[i])[3])
-                    else
-                        GameTooltip:AddDoubleLine("    "..specs[i],specs[i+1],MS_Tooltip:ClassColor(specs[i])[1],MS_Tooltip:ClassColor(specs[i])[2],MS_Tooltip:ClassColor(specs[i])[3],MS_Tooltip:ClassColor(specs[i+1])[1],MS_Tooltip:ClassColor(specs[i+1])[2],MS_Tooltip:ClassColor(specs[i+1])[3])
-                    end
+                p1 = p1+1
+                if prio == 'PRIO' then 
+                    MS_Tooltip:Draw(prio, specs)
+                    p = p1
+                end
+            end
+            p2 = 0
+            for prio, specs in pairs(o) do
+                p2 = p2+1
+                if p2 == p then
+                else
+                    MS_Tooltip:Draw(prio,specs)
                 end
             end
         end
