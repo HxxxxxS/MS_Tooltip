@@ -4,8 +4,8 @@ MS_Items = {
 
     [18823] = { -- Aged Core Leather Gloves
         ["PRIO"] = {"R - Dagger"},
-        ["MS"] = {"S - Enhance"},
-        ["OS"] = {"R - Sword", "D - Feral"}
+        ["MS"] = {"D - Tank", "D - Feral", "S - Enhance"},
+        ["OS"] = {"R - Sword"}
     },
     [17067] = { -- Ancient Cornerstone Grimoire
         ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "P - Healer", "S - Healer"}
@@ -40,8 +40,9 @@ MS_Items = {
         ["OS"] = {"S - Ele", "D - Balance", "D - Healer", "S - Healer"}
     },
     [17063] = { -- Band of Accuria
-        ["MS"] = {"D - Tank", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance"},
-        ["OS"] = {"W - Tank", "W - DW", "W - 2H"}
+        ["PRIO"] = {"D - Tank"},
+        ["MS"] = {"W - Tank", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance"},
+        ["OS"] = {"W - DW", "W - 2H"}
     },
     [19138] = { -- Band of Sulfuras
         ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "P - Healer", "S - Healer"}
@@ -131,7 +132,9 @@ MS_Items = {
         ["MS"] = {"Mage", "Warlock", "P - Shadow", "P - Healer"}
     },
     [18817] = { -- Crown of Destruction
-        ["MS"] = {"Hunter", "S - Enhance"}
+        ["PRIO"] = {"Hunter", "S - Enhance"},
+        ["MS"] = {"W - DW", "W - 2H"},
+        ["OS"] =  {"S - Ele", "S - Healer"}
     },
     [17068] = { -- Deathbringer
         ["MS"] = {"W - DW"},
@@ -228,7 +231,6 @@ MS_Items = {
     },
     [19139] = { -- Fireguard Shoulders
         ["PRIO"] = {"D - Tank"},
-        ["MS"] = {},
         ["OS"] = {"R - Dagger", "R - Sword", "D - Feral", "S - Enhance", "D - Balance", "D - Healer"}
     },
     [18811] = { -- Fireproof Cloak
@@ -280,10 +282,6 @@ MS_Items = {
         ["OS"] = {"P - Shadow"}
     },
     [18422] = { -- Head of Onyxia
-        ["PRIO"] = {"W - Tank", "D - Tank"},
-        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance"}
-    },
-    [18423] = { -- Head of Onyxia
         ["PRIO"] = {"W - Tank", "D - Tank"},
         ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance"}
     },
@@ -433,7 +431,6 @@ MS_Items = {
         ["MS"] = {"W - Tank", "D - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", "Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "P - Healer", "S - Healer"}
     },
     [17082] = { -- Shard of the Flame
-        ["MS"] = {}
     },
     [17064] = { -- Shard of the Scale
         ["MS"] = {"D - Healer", "P - Healer", "S - Healer"},
@@ -485,33 +482,36 @@ MS_Items = {
     [18812] = { -- Wristguards of True Flight
         ["MS"] = {"Hunter", "S - Enhance"}
     },
+
     -- BLACKWING LAIR
+
     [19345] = { -- Aegis of Preservation
         ["MS"] = {"P - Shadow", "P - Healer"}
     },
     [19388] = { -- Angelista's Grasp
-        ["MS"] = {"Warlock", "D - Balance"},
-        ["OS"] = {"Mage", "P - Shadow"}
+        ["MS"] = {"Mage", "Warlock", "D - Balance", "P - Shadow"},
+        ["OS"] = {"D - Healer", "P - Healer"}
     },
     [19336] = { -- Arcane Infused Gem
         ["MS"] = {"Hunter"}
     },
     [19376] = { -- Archimtiros' Ring of Reckoning
-        ["MS"] = {"W - Tank", "D - Tank"}
+        ["MS"] = {"W - Tank", "D - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance"}
     },
     [19361] = { -- Ashjre'thul, Crossbow of Smiting
         ["MS"] = {"Hunter"}
     },
     [19364] = { -- Ashkandi, Greatsword of the Brotherhood
         ["MS"] = {"W - 2H", "Hunter"},
-        ["OS"] = {"W - Tank"}
+        ["OS"] = {"W - Tank", "W - DW"}
     },
     [19362] = { -- Band of Dark Dominion
         ["MS"] = {"Warlock", "P - Shadow"},
         ["OS"] = {"P - Healer"}
     },
     [19403] = { -- Band of Forced Concentration
-        ["MS"] = {"Mage", "Warlock", "P - Shadow"},
+        ["PRIO"] = {"Mage", "Warlock"},
+        ["MS"] = {"S - Ele", "D - Balance", "P - Shadow"},
         ["OS"] = {"S - Enhance", "D - Healer", "P - Healer", "S - Healer"}
     },
     [16944] = { -- Belt of Ten Storms
@@ -527,7 +527,9 @@ MS_Items = {
         ["OS"] = {"P - Shadow"}
     },
     [19399] = { -- Black Ash Robe
-        ["MS"] = {"D - Tank"}
+        ["PRIO"] = {"D - Tank"},
+        ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "P - Healer", "S - Healer"},
+        ["OS"] = {"D - Feral", "S - Enhance"}
     },
     [19373] = { -- Black Brood Pauldrons
         ["MS"] = {"S - Healer"},
@@ -557,8 +559,7 @@ MS_Items = {
     },
     [19381] = { -- Boots of the Shadow Flame
         ["PRIO"] = {"D - Tank"},
-        ["MS"] = {"R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance"},
-        ["OS"] = {"W - DW", "W - 2H"}
+        ["MS"] = {"R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance"}
     },
     [16919] = { -- Boots of Transcendence
         ["MS"] = {"P - Healer"},
@@ -569,8 +570,8 @@ MS_Items = {
         ["OS"] = {"W - DW", "W - 2H"}
     },
     [19374] = { -- Bracers of Arcane Accuracy
-        ["MS"] = {"Mage", "Warlock"},
-        ["OS"] = {"P - Shadow", "D - Healer", "P - Healer", "S - Healer"}
+        ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow"},
+        ["OS"] = {"D - Healer", "P - Healer", "S - Healer"}
     },
     [16943] = { -- Bracers of Ten Storms
         ["MS"] = {"S - Healer"},
@@ -594,11 +595,12 @@ MS_Items = {
     },
     [19432] = { -- Circle of Applied Force
         ["PRIO"] = {"W - Tank", "D - Tank"},
-        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral"},
+        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "S - Enhance"},
         ["OS"] = {"S - Ele", "D - Balance", "D - Healer", "S - Healer"}
     },
     [19347] = { -- Claw of Chromaggus
-        ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "P - Healer", "S - Healer"},
+        ["PRIO"] = {"D - Healer", "P - Healer", "S - Healer"},
+        ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow"},
         ["OS"] = {"D - Tank", "S - Enhance"}
     },
     [19365] = { -- Claw of the Black Drake
@@ -611,11 +613,12 @@ MS_Items = {
         ["OS"] = {"W - Tank", "D - Tank"}
     },
     [19398] = { -- Cloak of Firemaw
-        ["MS"] = {"R - Dagger", "R - Sword"},
-        ["OS"] = {"W - Tank", "D - Tank", "W - DW", "W - 2H", "D - Feral", "Hunter", "S - Enhance", "D - Balance", "D - Healer", "S - Healer"}
+        ["MS"] = {"W - Tank", "D - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance"},
+        ["OS"] = {"D - Balance", "D - Healer", "S - Healer"}
     },
     [19378] = { -- Cloak of the Brood Lord
-        ["MS"] = {"Mage", "Warlock", "P - Shadow"}
+        ["PRIO"] = {"Mage", "Warlock"},
+        ["MS"] = {"S - Enhance", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "P - Healer", "S - Healer"}
     },
     [19363] = { -- Crul'shorukh, Edge of Chaos
         ["PRIO"] = {"W - Tank"},
@@ -642,8 +645,7 @@ MS_Items = {
     },
     [19368] = { -- Dragonbreath Hand Cannon
         ["PRIO"] = {"W - Tank"},
-        ["MS"] = {"Hunter"},
-        ["OS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword"}
+        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "Hunter"}
     },
     [19346] = { -- Dragonfang Blade
         ["PRIO"] = {"W - Tank"},
@@ -670,7 +672,7 @@ MS_Items = {
     },
     [19406] = { -- Drake Fang Talisman
         ["PRIO"] = {"W - Tank", "D - Tank"},
-        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter"}
+        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "S - Enhance"}
     },
     [19353] = { -- Drake Talon Cleaver
         ["MS"] = {"W - 2H", "S - Enhance"},
@@ -686,7 +688,6 @@ MS_Items = {
     },
     [19349] = { -- Elementium Reinforced Bulwark
         ["PRIO"] = {"W - Tank"},
-        ["MS"] = {},
         ["OS"] = {"W - DW", "W - 2H"}
     },
     [19386] = { -- Elementium Threaded Cloak
@@ -711,7 +712,8 @@ MS_Items = {
         ["OS"] = {"Mage", "Warlock"}
     },
     [19400] = { -- Firemaw's Clutch
-        ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "P - Healer", "S - Healer"},
+        ["PRIO"] = {"D - Healer", "P - Healer", "S - Healer"},
+        ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow"},
         ["OS"] = {"D - Tank", "D - Feral", "S - Enhance"}
     },
     [16948] = { -- Gauntlets of Ten Storms
@@ -723,7 +725,9 @@ MS_Items = {
         ["OS"] = {"W - DW", "W - 2H"}
     },
     [19369] = { -- Gloves of Rapid Evolution
-        ["MS"] = {}
+        ["PRIO"] = {"P - Healer"},
+        ["MS"] = {"Mage", "Warlock", "D - Healer", "S - Healer"},
+        ["OS"] = {"S - Enhance", "S - Ele", "D - Balance", "P - Shadow"}
     },
     [16949] = { -- Greaves of Ten Storms
         ["MS"] = {"S - Healer"},
@@ -733,12 +737,20 @@ MS_Items = {
         ["MS"] = {"P - Healer"},
         ["OS"] = {"P - Shadow"}
     },
+    [20383] = { -- Head of Broodlord Lashlayer
+    },
     [19002] = { -- Head of Nefarian
-        ["MS"] = {"D - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword"},
-        ["OS"] = {"W - Tank", "Mage", "Warlock", "S - Ele", "D - Balance", "D - Healer", "P - Healer", "S - Healer"}
+        ["PRIO"] = {"D - Tank", "R - Dagger", "R - Sword"},
+        ["MS"] = {"W - DW", "W - 2H", "D - Feral", "Hunter", "S - Enhance"},
+        ["OS"] = {"W - Tank", "S - Ele", "D - Balance"}
+    },
+    [19003] = { -- Head of Nefarian
+        ["PRIO"] = {"D - Tank", "R - Dagger", "R - Sword"},
+        ["MS"] = {"W - DW", "W - 2H", "D - Feral", "Hunter", "S - Enhance"},
+        ["OS"] = {"W - Tank", "S - Ele", "D - Balance"}
     },
     [19350] = { -- Heartstriker
-        ["MS"] = {}
+        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "Hunter"}
     },
     [19372] = { -- Helm of Endless Rage
         ["MS"] = {"W - Tank"},
@@ -754,7 +766,6 @@ MS_Items = {
     },
     [19341] = { -- Lifegiving Gem
         ["PRIO"] = {"W - Tank"},
-        ["MS"] = {},
         ["OS"] = {"W - DW", "W - 2H"}
     },
     [19360] = { -- Lok'amir il Romathis
@@ -767,24 +778,27 @@ MS_Items = {
     },
     [19405] = { -- Malfurion's Blessed Bulwark
         ["PRIO"] = {"D - Tank"},
-        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral"},
-        ["OS"] = {"W - Tank", "Hunter", "S - Enhance", "S - Ele", "S - Healer"}
+        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "S - Enhance"},
+        ["OS"] = {"W - Tank", "S - Ele", "S - Healer"}
     },
     [19370] = { -- Mantle of the Blackwing Cabal
-        ["MS"] = {"Mage", "Warlock", "D - Balance", "P - Shadow", "D - Healer", "P - Healer", "S - Healer"},
+        ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "P - Healer", "S - Healer"},
         ["OS"] = {"D - Tank", "D - Feral", "S - Enhance"}
     },
     [19339] = { -- Mind Quickening Gem
         ["MS"] = {"Mage"}
     },
     [19375] = { -- Mish'undare, Circlet of the Mind Flayer
-        ["MS"] = {"Mage", "Warlock"}
+        ["PRIO"] = {"Mage", "Warlock"},
+        ["MS"] = {"S - Ele", "D - Balance", "P - Shadow"},
+        ["OS"] = {"D - Healer", "P - Healer", "S - Healer"}
     },
     [19344] = { -- Natural Alignment Crystal
-        ["MS"] = {}
+        ["MS"] = {"S - Enhance", "S - Ele", "S - Healer"}
     },
     [19379] = { -- Neltharion's Tear
-        ["MS"] = {"Mage", "Warlock"},
+        ["PRIO"] = {"Mage", "Warlock"},
+        ["MS"] = {"S - Ele", "D - Balance", "P - Shadow"},
         ["OS"] = {"D - Healer", "P - Healer", "S - Healer"}
     },
     [16933] = { -- Nemesis Belt
@@ -833,17 +847,18 @@ MS_Items = {
     },
     [19371] = { -- Pendant of the Fallen Dragon
         ["MS"] = {"D - Healer", "P - Healer", "S - Healer"},
-        ["OS"] = {"D - Tank", "D - Feral", "S - Enhance", "Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow"}
+        ["OS"] = {"D - Tank", "D - Feral", "S - Enhance", "S - Ele", "D - Balance", "P - Shadow"}
     },
     [19377] = { -- Prestor's Talisman of Connivery
-        ["MS"] = {"D - Tank", "R - Dagger", "R - Sword", "D - Feral", "Hunter"}
+        ["MS"] = {"D - Tank", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance"},
+        ["OS"] = {"S - Ele", "D - Balance", "D - Healer", "S - Healer"}
     },
     [19401] = { -- Primalist's Linked Legguards
         ["MS"] = {"S - Ele"},
         ["OS"] = {"S - Enhance", "S - Healer"}
     },
     [19393] = { -- Primalist's Linked Waistguard
-        ["MS"] = {"S - Ele", "S - Healer"}
+        ["MS"] = {"S - Enhance", "S - Ele", "S - Healer"}
     },
     [19382] = { -- Pure Elementium Band
         ["MS"] = {"D - Healer", "P - Healer", "S - Healer"},
@@ -858,8 +873,8 @@ MS_Items = {
         ["OS"] = {"S - Enhance", "S - Ele", "D - Balance", "P - Shadow"}
     },
     [19397] = { -- Ring of Blackrock
-        ["MS"] = {"P - Shadow", "S - Healer"},
-        ["OS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "D - Healer", "P - Healer"}
+        ["MS"] = {"D - Healer", "P - Healer", "S - Healer"},
+        ["OS"] = {"S - Enhance", "S - Ele", "D - Balance", "P - Shadow"}
     },
     [19438] = { -- Ringo's Blizzard Boots
         ["MS"] = {"Mage"}
@@ -869,31 +884,31 @@ MS_Items = {
         ["OS"] = {"P - Shadow"}
     },
     [19340] = { -- Rune of Metamorphosis
-        ["MS"] = {"D - Feral", "D - Balance", "D - Healer"},
-        ["OS"] = {"D - Tank"}
+        ["MS"] = {"D - Tank", "D - Feral", "D - Balance", "D - Healer"}
     },
     [16965] = { -- Sabatons of Wrath
         ["MS"] = {"W - Tank"},
         ["OS"] = {"W - DW", "W - 2H"}
     },
     [19355] = { -- Shadow Wing Focus Staff
-        ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "P - Healer"},
+        ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "D - Healer", "S - Healer"},
         ["OS"] = {"D - Feral"}
     },
     [19391] = { -- Shimmering Geta
-        ["MS"] = {},
-        ["OS"] = {"W - Tank", "D - Tank", "D - Feral", "S - Enhance"}
+        ["MS"] = {"P - Shadow", "D - Healer", "P - Healer", "S - Healer"},
+        ["OS"] = {"W - Tank", "D - Tank", "D - Feral", "S - Enhance", "S - Ele", "D - Balance"}
     },
     [19430] = { -- Shroud of Pure Thought
         ["MS"] = {"D - Healer", "P - Healer", "S - Healer"},
         ["OS"] = {"D - Tank", "D - Feral", "S - Enhance", "S - Ele", "D - Balance", "P - Shadow"}
     },
     [19335] = { -- Spineshatter
-        ["MS"] = {},
-        ["OS"] = {"W - Tank", "W - 2H", "R - Dagger", "R - Sword", "Hunter", "S - Enhance", "S - Ele", "S - Healer"}
+        ["PRIO"] = {"W - Tank", "W - DW"},
+        ["OS"] = {"W - 2H", "R - Dagger", "R - Sword"}
     },
     [19356] = { -- Staff of the Shadow Flame
-        ["MS"] = {"Warlock"}
+        ["PRIO"] = {"Mage", "Warlock"},
+        ["MS"] = {"S - Ele", "D - Balance", "P - Shadow"}
     },
     [16903] = { -- Stormrage Belt
         ["MS"] = {"D - Healer"},
@@ -920,8 +935,7 @@ MS_Items = {
         ["OS"] = {"D - Tank", "D - Feral", "D - Balance"}
     },
     [19431] = { -- Styleen's Impeding Scarab
-        ["PRIO"] = {"W - Tank"},
-        ["MS"] = {},
+        ["MS"] = {"W - Tank"},
         ["OS"] = {"W - DW", "W - 2H"}
     },
     [19396] = { -- Taut Dragonhide Belt
@@ -940,8 +954,8 @@ MS_Items = {
         ["MS"] = {"Warlock"}
     },
     [19334] = { -- The Untamed Blade
-        ["MS"] = {"W - 2H"},
-        ["OS"] = {"W - Tank", "W - DW", "Hunter", "S - Ele", "S - Healer"}
+        ["MS"] = {"W - 2H", "Hunter", "S - Enhance"},
+        ["OS"] = {"W - Tank", "W - DW", "S - Ele", "S - Healer"}
     },
     [19380] = { -- Therazane's Link
         ["MS"] = {"Hunter", "S - Enhance"},
@@ -953,8 +967,5 @@ MS_Items = {
     [16960] = { -- Waistband of Wrath
         ["MS"] = {"W - Tank"},
         ["OS"] = {"W - DW"}
-    },
-    [20383] = { -- Head of Broodlord Lashlayer
-        ["MS"] = {}
     }
 }

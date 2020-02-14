@@ -156,7 +156,6 @@ function MS_Tooltip_setTooltip(self)
         if id == k then
             GameTooltip:AddLine(" ", {1,1,1})
             GameTooltip:AddLine("Loot priority:", {1,1,1})
-            MS_Tooltip:Print(id .. " " .. MS_Tooltip:Length(o))
             p = 0
             p1 = 0
             for prio, specs in pairs(o) do
