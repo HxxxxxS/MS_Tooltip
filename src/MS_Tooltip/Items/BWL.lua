@@ -1,5 +1,5 @@
 MS_Items["BWL"] = {
-    [19345] = { -- 
+    [19345] = { -- Aegis
         ["MS"] = {"P - Shadow", "P - Healer", }
     },
     [19388] = { -- Angelista's Grasp
@@ -141,7 +141,7 @@ MS_Items["BWL"] = {
         ["OS"] = {"W - 2H", }
     },
     [19362] = { -- Doom's Edge
-        ["PRIO"] = {"W - Tank", "", },
+        ["PRIO"] = {"W - Tank", },
         ["MS"] = {"W - DW", "Hunter", },
         ["OS"] = {"W - 2H", }
     },
@@ -222,7 +222,7 @@ MS_Items["BWL"] = {
         ["MS"] = {"S - Healer", },
         ["OS"] = {"S - Enhance", "S - Ele", }
     },
-    [19362] = { -- Essence Gatherer
+    [19435] = { -- Essence Gatherer
         ["MS"] = {"P - Shadow", "P - Healer", },
         ["OS"] = {"Mage", "Warlock", }
     },
