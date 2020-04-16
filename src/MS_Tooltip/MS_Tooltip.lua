@@ -152,25 +152,27 @@ function MS_Tooltip_setTooltip(self)
     local _, link = self:GetItem()
     local id = tonumber(MS_Tooltip:getItemID(MS_Tooltip:getItemString(link)))
     if not MS_Tooltip:itemExists(tonumber(id)) then return; end
-    for k, o in pairs(MS_Items) do
-        if id == k then
-            GameTooltip:AddLine(" ", {1,1,1})
-            GameTooltip:AddLine("Loot priority:", {1,1,1})
-            p = 0
-            p1 = 0
-            for prio, specs in pairs(o) do
-                p1 = p1+1
-                if prio == 'PRIO' then 
-                    MS_Tooltip:Draw(prio, specs)
-                    p = p1
+    for raid, items in pairs(MS_Items) do
+        for k, o in pairs(items) do
+            if id == k then
+                GameTooltip:AddLine(" ", {1,1,1})
+                GameTooltip:AddLine("Loot priority:", {1,1,1})
+                p = 0
+                p1 = 0
+                for prio, specs in pairs(o) do
+                    p1 = p1+1
+                    if prio == 'PRIO' then
+                        MS_Tooltip:Draw(prio, specs)
+                        p = p1
+                    end
                 end
-            end
-            p2 = 0
-            for prio, specs in pairs(o) do
-                p2 = p2+1
-                if p2 == p then
-                else
-                    MS_Tooltip:Draw(prio,specs)
+                p2 = 0
+                for prio, specs in pairs(o) do
+                    p2 = p2+1
+                    if p2 == p then
+                    else
+                        MS_Tooltip:Draw(prio,specs)
+                    end
                 end
             end
         end

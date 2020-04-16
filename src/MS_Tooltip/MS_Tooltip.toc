@@ -4,5 +4,8 @@
 ## Version: 1
 ## Notes: Displays which specs should roll for MS on raid epics.
 
-Items.lua
+Items/Items.lua
+Items/MC.lua
+Items/BWL.lua
+Items/ZG.lua
 MS_Tooltip.xml
