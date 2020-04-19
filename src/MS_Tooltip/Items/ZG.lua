@@ -294,8 +294,8 @@ MS_Items["ZG"] = {
         ["OS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", }
     },
     [20259] = { -- Shadow Panther Hide Gloves
-        ["MS"] = {"R - Dagger", "R - Sword", "D - Feral", "Hunter", },
-        ["OS"] = {"W - Tank", "D - Tank", "W - DW", "W - 2H", "S - Enhance", }
+        ["MS"] = {"D - Tank", "R - Dagger", "R - Sword", "D - Feral", "Hunter", },
+        ["OS"] = {"W - Tank", "W - DW", "W - 2H", "S - Enhance", }
     },
     [19876] = { -- Soul Corrupter's Necklace
         ["PRIO"] = {"Mage", "Warlock", },
