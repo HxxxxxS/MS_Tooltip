@@ -1,5 +1,5 @@
 MS_Items["ZG"] = {
-    [19862] = { -- 
+    [19862] = { -- Aegis of the Blood God
         ["MS"] = {"W - Tank", },
         ["OS"] = {"W - DW", "W - 2H", }
     },
@@ -267,7 +267,7 @@ MS_Items["ZG"] = {
     },
     [19908] = { -- Sceptre of Smiting
         ["MS"] = {"W - DW", },
-        ["OS"] = {"W - Tank", "D - Tank", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "S - Enhance", }
+        ["OS"] = {"W - Tank", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "S - Enhance", }
     },
     [20262] = { -- Seafury Boots
         ["MS"] = {"S - Enhance", "S - Ele", },
@@ -290,12 +290,12 @@ MS_Items["ZG"] = {
         ["OS"] = {"W - Tank", "D - Tank", "S - Ele", "D - Balance", "D - Healer", "S - Healer", }
     },
     [20261] = { -- Shadow Panther Hide Belt
-        ["MS"] = {"D - Tank", },
-        ["OS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", }
+        ["PRIO"] = {"D - Tank", },
+        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", }
     },
     [20259] = { -- Shadow Panther Hide Gloves
-        ["MS"] = {"D - Tank", "R - Dagger", "R - Sword", "D - Feral", "Hunter", },
-        ["OS"] = {"W - Tank", "W - DW", "W - 2H", "S - Enhance", }
+        ["PRIO"] = {"D - Tank", },
+        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", }
     },
     [19876] = { -- Soul Corrupter's Necklace
         ["PRIO"] = {"Mage", "Warlock", },
@@ -322,8 +322,8 @@ MS_Items["ZG"] = {
         ["MS"] = {"Mage", "Warlock", "P - Shadow", "P - Healer", }
     },
     [19946] = { -- Tigule's Harpoon
-        ["MS"] = {"W - 2H", },
-        ["OS"] = {"W - Tank", "W - DW", "Hunter", "S - Enhance", }
+        ["MS"] = {"W - 2H", "Hunter", "S - Enhance", },
+        ["OS"] = {"W - Tank", "W - DW", "S - Ele", "S - Healer", }
     },
     [22739] = { -- Tome of Polymorph: Turtle
         ["MS"] = {"Mage", }
@@ -331,14 +331,14 @@ MS_Items["ZG"] = {
     [19861] = { -- Touch of Chaos
         ["MS"] = {"Mage", "Warlock", "P - Shadow", "P - Healer", }
     },
-    [19866] = { -- Warblade of the Hakkari
+    [19865] = { -- Warblade of the Hakkari (MH)
         ["PRIO"] = {"Hunter", },
-        ["MS"] = {"W - DW", "R - Sword", },
-        ["OS"] = {"W - Tank", "W - 2H", "R - Dagger", }
+        ["MS"] = {"W - Tank", "W - DW", "R - Sword", },
+        ["OS"] = {"W - 2H", "R - Dagger", }
     },
-    [19865] = { -- Warblade of the Hakkari
-        ["MS"] = {"W - DW", "R - Sword", "Hunter", },
-        ["OS"] = {"W - Tank", "W - 2H", "R - Dagger", }
+    [19866] = { -- Warblade of the Hakkari (OH)
+        ["MS"] = {"W - Tank", "W - DW", "R - Sword", "Hunter", },
+        ["OS"] = {"W - 2H", "R - Dagger", }
     },
     [19909] = { -- Will of Arlokk
         ["MS"] = {"D - Healer", "P - Healer", "S - Healer", },
@@ -358,7 +358,7 @@ MS_Items["ZG"] = {
         ["MS"] = {"S - Ele", "P - Shadow", },
         ["OS"] = {"S - Enhance", "D - Balance", "D - Healer", "P - Healer", "S - Healer", }
     },
-    [19854] = { -- Zin'rokh\\, Destroyer of Worlds
+    [19854] = { -- Zin'rokh, Destroyer of Worlds
         ["MS"] = {"W - 2H", "Hunter", },
         ["OS"] = {"W - Tank", "W - DW", }
     },

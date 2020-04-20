@@ -1,5 +1,5 @@
 MS_Items["BWL"] = {
-    [19345] = { -- Aegis
+    [19345] = { -- Aegis of Preservation
         ["MS"] = {"P - Shadow", "P - Healer", }
     },
     [19388] = { -- Angelista's Grasp
@@ -369,7 +369,8 @@ MS_Items["BWL"] = {
         ["OS"] = {"S - Enhance", "S - Healer", }
     },
     [19393] = { -- Primalist's Linked Waistguard
-        ["MS"] = {"S - Enhance", "S - Ele", "S - Healer", }
+        ["MS"] = {"S - Enhance", "S - Ele", },
+        ["OS"] = {"S - Healer", }
     },
     [19382] = { -- Pure Elementium Band
         ["MS"] = {"D - Healer", "P - Healer", "S - Healer", },
@@ -414,7 +415,7 @@ MS_Items["BWL"] = {
         ["OS"] = {"D - Tank", "D - Feral", "S - Enhance", "S - Ele", "D - Balance", "P - Shadow", }
     },
     [19335] = { -- Spineshatter
-        ["PRIO"] = {"W - Tank", },
+        ["MS"] = {"W - Tank", },
         ["OS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", }
     },
     [19356] = { -- Staff of the Shadow Flame
