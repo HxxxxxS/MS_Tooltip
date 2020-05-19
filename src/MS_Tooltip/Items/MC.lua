@@ -1,5 +1,5 @@
 MS_Items["MC"] = {
-    [18823] = { -- 
+    [18823] = { -- Aged Core Leather Gloves
         ["PRIO"] = {"W - Tank", "R - Dagger", },
         ["MS"] = {"D - Tank", "D - Feral", "S - Enhance", },
         ["OS"] = {"R - Sword", }
@@ -235,6 +235,7 @@ MS_Items["MC"] = {
     },
     [19139] = { -- Fireguard Shoulders
         ["PRIO"] = {"D - Tank", },
+        ["MS"] = {},
         ["OS"] = {"R - Dagger", "R - Sword", "D - Feral", "S - Enhance", "D - Balance", "D - Healer", }
     },
     [18811] = { -- Fireproof Cloak
@@ -391,6 +392,7 @@ MS_Items["MC"] = {
     },
     [18816] = { -- Perdition's Blade
         ["PRIO"] = {"R - Dagger", },
+        ["MS"] = {},
         ["OS"] = {"W - Tank", "W - DW", "R - Sword", }
     },
     [18821] = { -- Quick Strike Ring
@@ -437,6 +439,7 @@ MS_Items["MC"] = {
         ["MS"] = {"W - Tank", "D - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", "Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "P - Healer", "S - Healer", }
     },
     [17082] = { -- Shard of the Flame
+        ["MS"] = {}
     },
     [17064] = { -- Shard of the Scale
         ["MS"] = {"D - Healer", "P - Healer", "S - Healer", },
@@ -476,7 +479,8 @@ MS_Items["MC"] = {
         ["MS"] = {"P - Shadow", "P - Healer", }
     },
     [17075] = { -- Vis'kag the Bloodletter
-        ["MS"] = {"W - DW", "R - Sword", },
+        ["PRIO"] = {"R - Sword", },
+        ["MS"] = {"W - DW", },
         ["OS"] = {"W - Tank", "W - 2H", "R - Dagger", }
     },
     [18810] = { -- Wild Growth Spaulders

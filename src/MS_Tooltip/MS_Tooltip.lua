@@ -6,7 +6,7 @@
 MS_Tooltip = {}
 
 MS_Tooltip.Name = "MS_Tooltip"
-MS_Tooltip.Version = "1.0"
+MS_Tooltip.Version = "1.4.3"
 MS_Tooltip.Enabled = 0
 MS_Tooltip.Colors = {
     red = "ffff0000",

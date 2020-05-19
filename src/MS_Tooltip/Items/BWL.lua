@@ -106,6 +106,7 @@ MS_Items["BWL"] = {
     },
     [19352] = { -- Chromatically Tempered Sword
         ["PRIO"] = {"W - DW", "R - Sword", },
+        ["MS"] = {},
         ["OS"] = {"W - Tank", "W - 2H", "R - Dagger", }
     },
     [19432] = { -- Circle of Applied Force
@@ -187,7 +188,8 @@ MS_Items["BWL"] = {
     },
     [19406] = { -- Drake Fang Talisman
         ["PRIO"] = {"W - Tank", "D - Tank", },
-        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", }
+        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", },
+        ["OS"] = {"D - Feral", "Hunter", "S - Enhance", }
     },
     [19353] = { -- Drake Talon Cleaver
         ["MS"] = {"W - 2H", "S - Enhance", },
@@ -305,7 +307,8 @@ MS_Items["BWL"] = {
         ["OS"] = {"D - Healer", "P - Healer", "S - Healer", }
     },
     [19344] = { -- Natural Alignment Crystal
-        ["MS"] = {"S - Enhance", "S - Ele", "S - Healer", }
+        ["MS"] = {},
+        ["OS"] = {"S - Enhance", "S - Ele", "S - Healer", }
     },
     [19379] = { -- Neltharion's Tear
         ["PRIO"] = {"Warlock", },
