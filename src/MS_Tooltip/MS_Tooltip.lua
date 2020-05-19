@@ -138,6 +138,7 @@ function MS_Tooltip:Length(T)
 end
 
 function MS_Tooltip:Draw(prio, specs)
+    if MS_Tooltip:Length(specs) == 0 then return end
     GameTooltip:AddLine("  "..prio..":", {1,1,1})
     for i = 1,MS_Tooltip:Length(specs),2 do
         if i == MS_Tooltip:Length(specs) then
