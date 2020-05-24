@@ -187,9 +187,8 @@ MS_Items["BWL"] = {
         ["MS"] = {"Hunter", }
     },
     [19406] = { -- Drake Fang Talisman
-        ["PRIO"] = {"W - Tank", "D - Tank", },
-        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", },
-        ["OS"] = {"D - Feral", "Hunter", "S - Enhance", }
+        ["PRIO"] = {"W - Tank", "D - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword"},
+        ["MS"] = {"D - Feral", "Hunter", "S - Enhance"}
     },
     [19353] = { -- Drake Talon Cleaver
         ["MS"] = {"W - 2H", "S - Enhance", },
