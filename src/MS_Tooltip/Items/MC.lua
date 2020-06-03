@@ -72,8 +72,7 @@ MS_Items["MC"] = {
         ["OS"] = {"W - DW", "W - 2H", }
     },
     [18832] = { -- Brutality Blade
-        ["PRIO"] = {"W - DW", "R - Sword", },
-        ["MS"] = {"Hunter", },
+        ["MS"] = {"W - DW", "R - Sword", "Hunter"},
         ["OS"] = {"W - Tank", "W - 2H", "R - Dagger", }
     },
     [19140] = { -- Cauterizing Band
@@ -126,8 +125,8 @@ MS_Items["MC"] = {
         ["OS"] = {"W - DW", "W - 2H", }
     },
     [18805] = { -- Core Hound Tooth
-        ["PRIO"] = {"R - Dagger", },
-        ["MS"] = {"W - Tank", "Hunter", },
+        ["PRIO"] = {"W - Tank", "Hunter", },
+        ["MS"] = {"R - Dagger", },
         ["OS"] = {"W - DW", "W - 2H", "R - Sword", }
     },
     [17077] = { -- Crimson Shocker
