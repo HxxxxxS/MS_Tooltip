@@ -6,7 +6,7 @@
 MS_Tooltip = {}
 
 MS_Tooltip.Name = "MS_Tooltip"
-MS_Tooltip.Version = "1.4.4"
+MS_Tooltip.Version = "1.5.0"
 MS_Tooltip.Enabled = 0
 MS_Tooltip.Colors = {
     red = "ffff0000",
@@ -172,7 +172,16 @@ function MS_Tooltip_setTooltip(self)
                     p2 = p2+1
                     if p2 == p then
                     else
-                        MS_Tooltip:Draw(prio,specs)
+                        if prio == "Notes" then
+                        else
+                            MS_Tooltip:Draw(prio,specs)
+                        end
+                    end
+                end
+                for prio, specs in pairs(o) do
+                    if prio == "Notes" then
+                        GameTooltip:AddLine("Notes:",{1,1,1})
+                        GameTooltip:AddLine("  "..specs,{1,1,1})
                     end
                 end
             end

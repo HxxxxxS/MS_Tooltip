@@ -21,6 +21,7 @@ var data = [];
 for(var i = 2;i<table.length;i++)
 {
   var row = table[i].querySelectorAll("td")
+  if (row[0].childNodes[0].nodeName != "A") continue
   var url = row[0].querySelector("a").href
   var id = url.match(/(?:item=)(\d+)/)[1]
   var name = row[0].innerText
@@ -28,24 +29,29 @@ for(var i = 2;i<table.length;i++)
   var ms = []
   var os = []
   var prio = []
+  var notes = null
 
   for(var j = 0;j<row.length;j++)
   {
-    
-    if (row[j].innerText.indexOf("Prio") > -1)
+    if (headers[j] == 'Notes')
     {
-      prio.push(headers[j])
-    }
-    if (row[j].innerText == "MS")
-    {
-      ms.push(headers[j])
-    }
-    if (row[j].innerText == "OS")
-    {
-      os.push(headers[j])
+      notes = row[j].innerText
+    } else {
+      if (row[j].innerText.indexOf("Prio") > -1)
+      {
+        prio.push(headers[j])
+      }
+      if (row[j].innerText == "MS")
+      {
+        ms.push(headers[j])
+      }
+      if (row[j].innerText == "OS")
+      {
+        os.push(headers[j])
+      }
     }
   }
-  data.push({id:id,name:name,prio:prio,ms:ms,os:os})
+  data.push({id:id,name:name,prio:prio,ms:ms,os:os,notes:notes})
 }
 
 var out = ""
@@ -54,12 +60,12 @@ for(var i = 0;i<data.length;i++)
 {
     out += "["+data[i].id+"] = { -- "+data[i].name+"\n"
   if(data[i].prio.length) {
-  out += "    [\"PRIO\"] = {"
-  for(var j = 0;j<data[i].prio.length;j++)
-  {
-    out += '"'+data[i].prio[j]+'", '
-  }
-  out += "},\n"
+    out += "    [\"PRIO\"] = {"
+    for(var j = 0;j<data[i].prio.length;j++)
+    {
+      out += '"'+data[i].prio[j]+'", '
+    }
+    out += "},\n"
   }
   out += "    [\"MS\"] = {"
   for(var j = 0;j<data[i].ms.length;j++)
@@ -67,15 +73,16 @@ for(var i = 0;i<data.length;i++)
     out += '"'+data[i].ms[j]+'", '
   }
   if(data[i].os.length){
-  out += "},\n"
-  out += "    [\"OS\"] = {"
-  for(var j = 0;j<data[i].os.length;j++)
-  {
-    out += '"'+data[i].os[j]+'", '
+    out += "},\n"
+    out += "    [\"OS\"] = {"
+    for(var j = 0;j<data[i].os.length;j++)
+    {
+      out += '"'+data[i].os[j]+'", '
+    }
   }
-  }
-  out += "}\n"
-  out += "},\n"
+  out += "}"
+  if(data[i].notes) out += `\n    ["Notes"] = "${data[i].notes}"`
+  out += "\n},\n"
 }
 
 console.log(out)
