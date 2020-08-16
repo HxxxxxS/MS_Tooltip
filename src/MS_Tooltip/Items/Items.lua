@@ -1,5 +1,6 @@
 MS_Items = {
     MC = {},
     BWL = {},
-    ZG = {}
+    ZG = {},
+    AQ40 = {}
 }

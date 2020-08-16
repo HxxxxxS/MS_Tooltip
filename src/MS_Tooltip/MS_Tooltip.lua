@@ -6,7 +6,7 @@
 MS_Tooltip = {}
 
 MS_Tooltip.Name = "MS_Tooltip"
-MS_Tooltip.Version = "1.5.0"
+MS_Tooltip.Version = "1.5.3"
 MS_Tooltip.Enabled = 0
 MS_Tooltip.Colors = {
     red = "ffff0000",
@@ -157,7 +157,7 @@ function MS_Tooltip_setTooltip(self)
         for k, o in pairs(items) do
             if id == k then
                 GameTooltip:AddLine(" ", {1,1,1})
-                GameTooltip:AddLine("Loot priority:", {1,1,1})
+                GameTooltip:AddLine("Loot priority v"..MS_Tooltip.Version, {1,1,1})
                 p = 0
                 p1 = 0
                 for prio, specs in pairs(o) do

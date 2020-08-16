@@ -3,8 +3,8 @@ MS_Items["BWL"] = {
         ["MS"] = {"P - Shadow", "P - Healer", }
     },
     [19388] = { -- Angelista's Grasp
-        ["PRIO"] = {"Warlock", },
-        ["MS"] = {"Mage", "D - Balance", "P - Shadow", },
+        ["PRIO"] = {"Mage", "Warlock", },
+        ["MS"] = {"D - Balance", "P - Shadow", },
         ["OS"] = {"D - Healer", "P - Healer", }
     },
     [19336] = { -- Arcane Infused Gem
@@ -25,8 +25,8 @@ MS_Items["BWL"] = {
         ["OS"] = {"P - Healer", }
     },
     [19403] = { -- Band of Forced Concentration
-        ["PRIO"] = {"Warlock", },
-        ["MS"] = {"Mage", "S - Ele", "D - Balance", "P - Shadow", },
+        ["PRIO"] = {"Mage", "Warlock", },
+        ["MS"] = {"S - Ele", "D - Balance", "P - Shadow", },
         ["OS"] = {"S - Enhance", "D - Healer", "P - Healer", "S - Healer", }
     },
     [16944] = { -- Belt of Ten Storms
@@ -72,8 +72,9 @@ MS_Items["BWL"] = {
         ["OS"] = {"S - Enhance", "S - Ele", "D - Balance", "P - Shadow", }
     },
     [19381] = { -- Boots of the Shadow Flame
-        ["PRIO"] = {"D - Tank", },
-        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", }
+        ["PRIO"] = {"D - Tank", "R - Dagger", },
+        ["MS"] = {"D - Feral", "Hunter", "S - Enhance", },
+        ["OS"] = {"W - DW", "W - 2H", "R - Sword", }
     },
     [16919] = { -- Boots of Transcendence
         ["MS"] = {"P - Healer", },
@@ -106,8 +107,8 @@ MS_Items["BWL"] = {
     },
     [19352] = { -- Chromatically Tempered Sword
         ["PRIO"] = {"W - DW", "R - Sword", },
-        ["MS"] = {},
-        ["OS"] = {"W - Tank", "W - 2H", "R - Dagger", }
+        ["MS"] = {"W - Tank", },
+        ["OS"] = {"W - 2H", "R - Dagger", }
     },
     [19432] = { -- Circle of Applied Force
         ["PRIO"] = {"W - Tank", "D - Tank", },
@@ -121,14 +122,15 @@ MS_Items["BWL"] = {
     },
     [19365] = { -- Claw of the Black Drake
         ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", },
-        ["OS"] = {"W - Tank", }
+        ["OS"] = {"W - Tank", },
+        ["Notes"] = "Once again Meme item?"
     },
     [19436] = { -- Cloak of Draconic Might
         ["PRIO"] = {"W - DW", "W - 2H", },
         ["MS"] = {"R - Dagger", "R - Sword", "D - Feral", "S - Enhance", },
         ["OS"] = {"W - Tank", "D - Tank", }
     },
-    [19436] = { -- Cloak of Firemaw
+    [19398] = { -- Cloak of Firemaw
         ["MS"] = {"W - Tank", "D - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", },
         ["OS"] = {"D - Balance", "D - Healer", "S - Healer", }
     },
@@ -144,7 +146,8 @@ MS_Items["BWL"] = {
     [19362] = { -- Doom's Edge
         ["PRIO"] = {"W - Tank", },
         ["MS"] = {"W - DW", "Hunter", },
-        ["OS"] = {"W - 2H", }
+        ["OS"] = {"W - 2H", },
+        ["Notes"] = "Orc/Edgemaster's Tank"
     },
     [19354] = { -- Draconic Avenger
         ["MS"] = {"W - 2H", "S - Enhance", },
@@ -187,8 +190,8 @@ MS_Items["BWL"] = {
         ["MS"] = {"Hunter", }
     },
     [19406] = { -- Drake Fang Talisman
-        ["PRIO"] = {"W - Tank", "D - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword"},
-        ["MS"] = {"D - Feral", "Hunter", "S - Enhance"}
+        ["PRIO"] = {"W - Tank", "D - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", },
+        ["MS"] = {"D - Feral", "Hunter", "S - Enhance", }
     },
     [19353] = { -- Drake Talon Cleaver
         ["MS"] = {"W - 2H", "S - Enhance", },
@@ -243,7 +246,8 @@ MS_Items["BWL"] = {
     [19369] = { -- Gloves of Rapid Evolution
         ["PRIO"] = {"P - Healer", },
         ["MS"] = {"Mage", "Warlock", "D - Healer", "S - Healer", },
-        ["OS"] = {"S - Enhance", "S - Ele", "D - Balance", "P - Shadow", }
+        ["OS"] = {"S - Enhance", "S - Ele", "D - Balance", "P - Shadow", },
+        ["Notes"] = "Meme item apparently?"
     },
     [16949] = { -- Greaves of Ten Storms
         ["MS"] = {"S - Healer", },
@@ -258,7 +262,8 @@ MS_Items["BWL"] = {
         ["OS"] = {"S - Ele", "D - Balance", }
     },
     [19350] = { -- Heartstriker
-        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "Hunter", }
+        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "Hunter", },
+        ["Notes"] = "Meme bow apparently?"
     },
     [19372] = { -- Helm of Endless Rage
         ["PRIO"] = {"W - Tank", },
@@ -283,9 +288,10 @@ MS_Items["BWL"] = {
         ["OS"] = {"S - Enhance", "S - Ele", "D - Balance", }
     },
     [19351] = { -- Maladath, Runed Blade of the Black Flight
-        ["PRIO"] = {"W - Tank", "", },
+        ["PRIO"] = {"W - Tank", },
         ["MS"] = {"W - DW", "R - Sword", },
-        ["OS"] = {"W - 2H", "R - Dagger", }
+        ["OS"] = {"W - 2H", "R - Dagger", },
+        ["Notes"] = "MS/Prio to tanks if they have Edgemasters."
     },
     [19405] = { -- Malfurion's Blessed Bulwark
         ["PRIO"] = {"D - Tank", },
@@ -301,8 +307,8 @@ MS_Items["BWL"] = {
         ["MS"] = {"Mage", }
     },
     [19375] = { -- Mish'undare, Circlet of the Mind Flayer
-        ["PRIO"] = {"Mage", },
-        ["MS"] = {"Warlock", "S - Ele", "D - Balance", "P - Shadow", },
+        ["PRIO"] = {"Mage", "Warlock", },
+        ["MS"] = {"S - Ele", "D - Balance", "P - Shadow", },
         ["OS"] = {"D - Healer", "P - Healer", "S - Healer", }
     },
     [19344] = { -- Natural Alignment Crystal
@@ -310,8 +316,8 @@ MS_Items["BWL"] = {
         ["OS"] = {"S - Enhance", "S - Ele", "S - Healer", }
     },
     [19379] = { -- Neltharion's Tear
-        ["PRIO"] = {"Warlock", },
-        ["MS"] = {"Mage", "S - Ele", "D - Balance", "P - Shadow", },
+        ["PRIO"] = {"Mage", "Warlock", },
+        ["MS"] = {"S - Ele", "D - Balance", "P - Shadow", },
         ["OS"] = {"D - Healer", "P - Healer", "S - Healer", }
     },
     [16933] = { -- Nemesis Belt
@@ -398,7 +404,8 @@ MS_Items["BWL"] = {
         ["OS"] = {"P - Shadow", }
     },
     [19340] = { -- Rune of Metamorphosis
-        ["MS"] = {"D - Tank", "D - Feral", "D - Balance", "D - Healer", }
+        ["MS"] = {"D - Feral", },
+        ["OS"] = {"D - Tank", "D - Balance", "D - Healer", }
     },
     [16965] = { -- Sabatons of Wrath
         ["MS"] = {"W - Tank", },
@@ -406,11 +413,13 @@ MS_Items["BWL"] = {
     },
     [19355] = { -- Shadow Wing Focus Staff
         ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "D - Healer", "S - Healer", },
-        ["OS"] = {"D - Feral", }
+        ["OS"] = {"D - Feral", },
+        ["Notes"] = "Meme item"
     },
     [19391] = { -- Shimmering Geta
         ["MS"] = {"P - Shadow", "D - Healer", "P - Healer", "S - Healer", },
-        ["OS"] = {"W - Tank", "D - Tank", "D - Feral", "S - Enhance", "S - Ele", "D - Balance", }
+        ["OS"] = {"W - Tank", "D - Tank", "D - Feral", "S - Enhance", "S - Ele", "D - Balance", },
+        ["Notes"] = "Meme item"
     },
     [19430] = { -- Shroud of Pure Thought
         ["MS"] = {"D - Healer", "P - Healer", "S - Healer", },
@@ -473,7 +482,8 @@ MS_Items["BWL"] = {
     },
     [19380] = { -- Therazane's Link
         ["MS"] = {"Hunter", "S - Enhance", },
-        ["OS"] = {"S - Ele", "S - Healer", }
+        ["OS"] = {"S - Ele", "S - Healer", },
+        ["Notes"] = "Meme item? Hunter/Enhance?"
     },
     [19342] = { -- Venomous Totem
         ["MS"] = {"R - Dagger", "R - Sword", }
