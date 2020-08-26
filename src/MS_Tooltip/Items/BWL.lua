@@ -139,13 +139,11 @@ MS_Items["BWL"] = {
         ["MS"] = {"S - Enhance", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "P - Healer", "S - Healer", }
     },
     [19363] = { -- Crul'shorukh, Edge of Chaos
-        ["PRIO"] = {"W - DW", },
-        ["MS"] = {"W - Tank", },
+        ["MS"] = {"W - Tank", "W - DW", },
         ["OS"] = {"W - 2H", }
     },
     [19362] = { -- Doom's Edge
-        ["PRIO"] = {"W - Tank", },
-        ["MS"] = {"W - DW", "Hunter", },
+        ["MS"] = {"W - Tank", "W - DW", "Hunter", },
         ["OS"] = {"W - 2H", },
         ["Notes"] = "Orc/Edgemaster's Tank"
     },

@@ -1,7 +1,6 @@
 MS_Items["AQ40"] = {
     [20928] = { -- Qiraji Bindings of Command
-        ["PRIO"] = {"W - Tank", },
-        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "Hunter", }
+        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "Hunter", }
     },
     [20932] = { -- Qiraji Bindings of Dominance
         ["MS"] = {"S - Enhance", "Mage", "Warlock", "S - Ele", "D - Balance", "S - Healer", },
@@ -156,6 +155,10 @@ MS_Items["AQ40"] = {
         ["MS"] = {"D - Tank", "W - DW", "W - 2H", "R - Dagger", "S - Enhance", },
         ["OS"] = {"W - Tank", "S - Ele", "D - Balance", "D - Healer", "S - Healer", }
     },
+    [21674] = { -- Gauntlets of Steadfast Determination
+        ["MS"] = {"W - Tank", },
+        ["OS"] = {"W - DW", "W - 2H", }
+    },
     [21675] = { -- Thick Qirajihide Belt
         ["PRIO"] = {"D - Tank", },
         ["MS"] = {"S - Enhance", },
@@ -286,7 +289,8 @@ MS_Items["AQ40"] = {
     [21602] = { -- Qiraji Execution Bracers
         ["PRIO"] = {"D - Tank", "R - Dagger", "R - Sword", },
         ["MS"] = {"W - Tank", "W - DW", "W - 2H", "D - Feral", "S - Enhance", },
-        ["OS"] = {"S - Ele", "S - Healer", }
+        ["OS"] = {"S - Ele", "S - Healer", },
+        ["Notes"] = "Tank prio"
     },
     [21599] = { -- Vek'lor's Gloves of Devastation
         ["MS"] = {"Hunter", "S - Enhance", },
@@ -414,7 +418,8 @@ MS_Items["AQ40"] = {
     [21586] = { -- Belt of Never-ending Agony
         ["PRIO"] = {"D - Tank", "R - Dagger", "R - Sword", "D - Feral", },
         ["MS"] = {"W - Tank", "W - DW", "W - 2H", "S - Enhance", },
-        ["OS"] = {"S - Ele", "S - Healer", }
+        ["OS"] = {"S - Ele", "S - Healer", },
+        ["Notes"] = "Tank prio"
     },
     [21585] = { -- Dark Storm Gauntlets
         ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", },
@@ -430,7 +435,7 @@ MS_Items["AQ40"] = {
     [21579] = { -- Vanquished Tentacle of C'Thun
         ["MS"] = {},
         ["OS"] = {"S - Enhance", "S - Ele", "S - Healer", },
-        ["Notes"] = "Girl prio"
+        ["Notes"] = "anime girl prio"
     },
     [21839] = { -- Scepter of the False Prophet
         ["MS"] = {"D - Healer", "P - Healer", "S - Healer", },
@@ -473,18 +478,18 @@ MS_Items["AQ40"] = {
     },
     [21218] = { -- Blue Qiraji Resonating Crystal
         ["MS"] = {},
-        ["Notes"] = "Healer + Tank prio"
+        ["Notes"] = "EPGP Raidroll"
     },
     [21323] = { -- Green Qiraji Resonating Crystal
         ["MS"] = {},
-        ["Notes"] = "Healer + Tank prio"
+        ["Notes"] = "EPGP Raidroll"
     },
     [21321] = { -- Red Qiraji Resonating Crystal
         ["MS"] = {},
-        ["Notes"] = "Use EPGP but it costs zero GP"
+        ["Notes"] = "GBID"
     },
     [21324] = { -- Yellow Qiraji Resonating Crystal
         ["MS"] = {},
-        ["Notes"] = "Healer + Tank prio"
+        ["Notes"] = "EPGP Raidroll"
     },
 }
