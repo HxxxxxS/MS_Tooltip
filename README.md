@@ -7,12 +7,13 @@ Displays which specs should roll for MS on raid epics.
 
 Extracted from Google Sheets with this JS:
 ```
+var title = document.location.href.split('/')[document.location.href.split('/').length-1].split('.')[0]
 var table = document.querySelectorAll("tbody tr");
 var cols = table[0].querySelectorAll("td")
 var headers = [];
 for(var i = 0;i<cols.length;i++)
 {
-    headers.push(cols[i].innerText)
+  headers.push(cols[i].innerText)
 }
 
 
@@ -21,11 +22,20 @@ var data = [];
 for(var i = 2;i<table.length;i++)
 {
   var row = table[i].querySelectorAll("td")
-  if (row[0].childNodes[0].nodeName != "A") continue
+  if (row[0].firstChild.nodeName != "A"){
+    if (row[0].firstChild.firstChild != null) {
+      if (row[0].firstChild.firstChild.nodeName != "A"){
+        console.log(row[0]);
+        continue;
+      }
+    } else {
+      continue;
+    }
+  }
   var url = row[0].querySelector("a").href
   var id = url.match(/(?:item=)(\d+)/)[1]
   var name = row[0].innerText
-  
+
   var ms = []
   var os = []
   var prio = []
@@ -54,36 +64,36 @@ for(var i = 2;i<table.length;i++)
   data.push({id:id,name:name,prio:prio,ms:ms,os:os,notes:notes})
 }
 
-var out = ""
+var out = `MS_Items[\"${title}\"] = {\n`
 
 for(var i = 0;i<data.length;i++)
 {
-    out += "["+data[i].id+"] = { -- "+data[i].name+"\n"
+  out += "    ["+data[i].id+"] = { -- "+data[i].name+"\n"
   if(data[i].prio.length) {
-    out += "    [\"PRIO\"] = {"
+    out += "        [\"PRIO\"] = {"
     for(var j = 0;j<data[i].prio.length;j++)
     {
       out += '"'+data[i].prio[j]+'", '
     }
     out += "},\n"
   }
-  out += "    [\"MS\"] = {"
+  out += "        [\"MS\"] = {"
   for(var j = 0;j<data[i].ms.length;j++)
   {
     out += '"'+data[i].ms[j]+'", '
   }
   if(data[i].os.length){
     out += "},\n"
-    out += "    [\"OS\"] = {"
+    out += "        [\"OS\"] = {"
     for(var j = 0;j<data[i].os.length;j++)
     {
       out += '"'+data[i].os[j]+'", '
     }
   }
   out += "}"
-  if(data[i].notes) out += `\n    ["Notes"] = "${data[i].notes}"`
-  out += "\n},\n"
+  if(data[i].notes) out += `,\n        ["Notes"] = "${data[i].notes}"`
+  out += "\n    },\n"
 }
-
+out += "}"
 console.log(out)
 ```
