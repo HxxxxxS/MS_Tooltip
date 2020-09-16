@@ -1,6 +1,7 @@
 MS_Items["AQ40"] = {
     [20928] = { -- Qiraji Bindings of Command
-        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "Hunter", }
+        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", },
+        ["OS"] = {"Hunter", }
     },
     [20932] = { -- Qiraji Bindings of Dominance
         ["MS"] = {"S - Enhance", "Mage", "Warlock", "S - Ele", "D - Balance", "S - Healer", },
@@ -51,7 +52,7 @@ MS_Items["AQ40"] = {
     },
     [21701] = { -- Cloak of Concentrated Hatred
         ["MS"] = {"W - Tank", "D - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "S - Enhance", },
-        ["OS"] = {"S - Ele", "S - Healer", }
+        ["OS"] = {"Hunter", "S - Ele", "S - Healer", }
     },
     [21707] = { -- Ring of Swarming Thought
         ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", },
@@ -92,7 +93,7 @@ MS_Items["AQ40"] = {
     },
     [21680] = { -- Vest of Swift Execution
         ["MS"] = {"D - Tank", "R - Dagger", "R - Sword", "D - Feral", "S - Enhance", },
-        ["OS"] = {"S - Ele", "D - Balance", "D - Healer", "S - Healer", }
+        ["OS"] = {"Hunter", "S - Ele", "D - Balance", "D - Healer", "S - Healer", }
     },
     [21681] = { -- Ring of the Devoured
         ["MS"] = {"D - Healer", "P - Healer", "S - Healer", },
@@ -130,7 +131,7 @@ MS_Items["AQ40"] = {
     },
     [21682] = { -- Bile-Covered Gauntlets
         ["MS"] = {"D - Tank", "R - Dagger", "R - Sword", "D - Feral", "S - Enhance", },
-        ["OS"] = {"S - Ele", "S - Healer", },
+        ["OS"] = {"Hunter", "S - Ele", "S - Healer", },
         ["Notes"] = "Soaker prio"
     },
     [21687] = { -- Ukko's Ring of Darkness
@@ -144,7 +145,8 @@ MS_Items["AQ40"] = {
     },
     [21678] = { -- Necklace of Purity
         ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "S - Healer", },
-        ["OS"] = {"D - Tank", "D - Feral", "S - Enhance", "D - Healer", "P - Healer", }
+        ["OS"] = {"D - Tank", "D - Feral", "S - Enhance", "D - Healer", "P - Healer", },
+        ["Notes"] = "Soak specc"
     },
     [21671] = { -- Robes of the Battleguard
         ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "S - Healer", },
@@ -153,7 +155,7 @@ MS_Items["AQ40"] = {
     [21672] = { -- Gloves of Enforcement
         ["PRIO"] = {"R - Sword", "D - Feral", },
         ["MS"] = {"D - Tank", "W - DW", "W - 2H", "R - Dagger", "S - Enhance", },
-        ["OS"] = {"W - Tank", "S - Ele", "D - Balance", "D - Healer", "S - Healer", }
+        ["OS"] = {"W - Tank", "Hunter", "S - Ele", "D - Balance", "D - Healer", "S - Healer", }
     },
     [21674] = { -- Gauntlets of Steadfast Determination
         ["MS"] = {"W - Tank", },
@@ -211,22 +213,22 @@ MS_Items["AQ40"] = {
         ["Notes"] = "Soaker prio"
     },
     [21651] = { -- Scaled Sand Reaver Leggings
-        ["MS"] = {"W - DW", "W - 2H", "S - Enhance", },
+        ["MS"] = {"W - DW", "W - 2H", "Hunter", "S - Enhance", },
         ["OS"] = {"W - Tank", "S - Ele", "S - Healer", }
     },
     [21645] = { -- Hive Tunneler's Boots
-        ["MS"] = {"D - Tank", "D - Feral", "S - Enhance", },
+        ["MS"] = {"D - Tank", "D - Feral", "Hunter", "S - Enhance", },
         ["OS"] = {"S - Ele", "S - Healer", }
     },
     [21650] = { -- Ancient Qiraji Ripper
-        ["MS"] = {"W - Tank", "W - DW", "R - Sword", },
+        ["MS"] = {"W - Tank", "W - DW", "R - Sword", "Hunter", },
         ["OS"] = {"W - 2H", "R - Dagger", }
     },
     [21635] = { -- Barb of the Sand Reaver
-        ["MS"] = {}
+        ["MS"] = {"Hunter", }
     },
     [21664] = { -- Barbed Choker
-        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "S - Enhance", },
+        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", },
         ["OS"] = {"W - Tank", "D - Tank", "S - Ele", "S - Healer", }
     },
     [21647] = { -- Fetish of the Sand Reaver
@@ -283,12 +285,12 @@ MS_Items["AQ40"] = {
         ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", }
     },
     [20930] = { -- Vek'lor's Diadem
-        ["MS"] = {"R - Dagger", "R - Sword", "Hunter", "S - Enhance", "S - Ele", "D - Balance", "S - Healer", },
-        ["OS"] = {"D - Tank", "D - Feral", "D - Healer", }
+        ["MS"] = {"R - Dagger", "R - Sword", "S - Enhance", "S - Ele", "D - Balance", "S - Healer", },
+        ["OS"] = {"D - Tank", "D - Feral", "Hunter", "D - Healer", }
     },
     [21602] = { -- Qiraji Execution Bracers
-        ["PRIO"] = {"D - Tank", "R - Dagger", "R - Sword", },
-        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "D - Feral", "S - Enhance", },
+        ["PRIO"] = {"D - Tank", },
+        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", },
         ["OS"] = {"S - Ele", "S - Healer", },
         ["Notes"] = "Tank prio"
     },
@@ -351,9 +353,8 @@ MS_Items["AQ40"] = {
         ["OS"] = {"P - Shadow", }
     },
     [20931] = { -- Skin of the Great Sandworm
-        ["PRIO"] = {"D - Tank", },
-        ["MS"] = {"S - Enhance", "Warlock", "S - Ele", "D - Balance", "S - Healer", },
-        ["OS"] = {"D - Feral", "D - Healer", }
+        ["MS"] = {"D - Tank", "S - Enhance", "Warlock", "S - Ele", "D - Balance", "S - Healer", },
+        ["OS"] = {"D - Feral", "Hunter", "D - Healer", }
     },
     [21615] = { -- Don Rigoberto's Lost Hat
         ["MS"] = {"D - Healer", "P - Healer", "S - Healer", },
@@ -369,8 +370,7 @@ MS_Items["AQ40"] = {
         ["Notes"] = "Prio for people without DFT"
     },
     [23557] = { -- Larvae of the Great Worm
-        ["PRIO"] = {"Hunter", },
-        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", },
+        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "Hunter", },
         ["Notes"] = "MS Prio for hunters without xbow"
     },
     [21610] = { -- Wormscale Blocker
@@ -391,8 +391,8 @@ MS_Items["AQ40"] = {
         ["OS"] = {"D - Tank", "D - Feral", "P - Shadow", "D - Healer", }
     },
     [21221] = { -- Eye of C'Thun
-        ["PRIO"] = {"D - Tank", },
-        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", "Mage", "Warlock", "S - Ele", "D - Healer", "P - Healer", "S - Healer", },
+        ["PRIO"] = {"W - Tank", "D - Tank", },
+        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", "Mage", "Warlock", "S - Ele", "D - Healer", "P - Healer", "S - Healer", },
         ["OS"] = {"D - Balance", "P - Shadow", }
     },
     [22732] = { -- Mark of C'Thun
@@ -417,7 +417,7 @@ MS_Items["AQ40"] = {
     },
     [21586] = { -- Belt of Never-ending Agony
         ["PRIO"] = {"D - Tank", "R - Dagger", "R - Sword", "D - Feral", },
-        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "S - Enhance", },
+        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "Hunter", "S - Enhance", },
         ["OS"] = {"S - Ele", "S - Healer", },
         ["Notes"] = "Tank prio"
     },

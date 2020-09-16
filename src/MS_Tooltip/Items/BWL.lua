@@ -106,8 +106,7 @@ MS_Items["BWL"] = {
         ["MS"] = {"W - DW", "W - 2H", }
     },
     [19352] = { -- Chromatically Tempered Sword
-        ["PRIO"] = {"W - DW", "R - Sword", },
-        ["MS"] = {"W - Tank", },
+        ["MS"] = {"W - Tank", "W - DW", "R - Sword", },
         ["OS"] = {"W - 2H", "R - Dagger", }
     },
     [19432] = { -- Circle of Applied Force
@@ -286,8 +285,8 @@ MS_Items["BWL"] = {
         ["OS"] = {"S - Enhance", "S - Ele", "D - Balance", }
     },
     [19351] = { -- Maladath, Runed Blade of the Black Flight
-        ["PRIO"] = {"W - Tank", },
-        ["MS"] = {"W - DW", "R - Sword", },
+        ["PRIO"] = {"R - Sword", },
+        ["MS"] = {"W - Tank", "W - DW", },
         ["OS"] = {"W - 2H", "R - Dagger", },
         ["Notes"] = "MS/Prio to tanks if they have Edgemasters."
     },
