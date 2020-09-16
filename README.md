@@ -6,7 +6,7 @@ Displays which specs should roll for MS on raid epics.
 * Start the client and enable the addon as usual
 
 Extracted from Google Sheets with this JS:
-```
+```js
 var title = document.location.href.split('/')[document.location.href.split('/').length-1].split('.')[0]
 var table = document.querySelectorAll("tbody tr");
 var cols = table[0].querySelectorAll("td")
