@@ -1,7 +1,7 @@
 ## Interface: 11350
 ## Author: Psilocybin
 ## Title: MS_Tooltip
-## Version: 1.5.4
+## Version: 1.5.5
 ## Notes: Displays which specs should roll for MS on raid epics.
 
 Items/Items.lua
