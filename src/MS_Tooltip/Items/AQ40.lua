@@ -8,8 +8,9 @@ MS_Items["AQ40"] = {
         ["OS"] = {"D - Tank", "D - Feral", "D - Healer", }
     },
     [21232] = { -- Imperial Qiraji Armaments
-        ["MS"] = {"W - Tank", "W - DW", "R - Dagger", "Hunter", },
-        ["OS"] = {"W - 2H", "R - Sword", "S - Enhance", "S - Ele", "S - Healer", }
+        ["PRIO"] = {"W - Tank", "W - DW", "R - Dagger", },
+        ["MS"] = {"W - 2H", "Hunter", },
+        ["OS"] = {"R - Sword", "S - Enhance", "S - Ele", "S - Healer", }
     },
     [21237] = { -- Imperial Qiraji Regalia
         ["PRIO"] = {"D - Tank", },
@@ -209,7 +210,8 @@ MS_Items["AQ40"] = {
         ["OS"] = {"S - Enhance", "S - Ele", "D - Balance", "P - Shadow", }
     },
     [21652] = { -- Silithid Carapace Chestguard
-        ["MS"] = {"W - Tank", "W - DW", "W - 2H", },
+        ["PRIO"] = {"W - Tank", },
+        ["MS"] = {"W - DW", "W - 2H", },
         ["Notes"] = "Soaker prio"
     },
     [21651] = { -- Scaled Sand Reaver Leggings
@@ -221,15 +223,16 @@ MS_Items["AQ40"] = {
         ["OS"] = {"S - Ele", "S - Healer", }
     },
     [21650] = { -- Ancient Qiraji Ripper
-        ["MS"] = {"W - Tank", "W - DW", "R - Sword", "Hunter", },
+        ["PRIO"] = {"R - Sword", },
+        ["MS"] = {"W - Tank", "W - DW", "Hunter", },
         ["OS"] = {"W - 2H", "R - Dagger", }
     },
     [21635] = { -- Barb of the Sand Reaver
         ["MS"] = {"Hunter", }
     },
     [21664] = { -- Barbed Choker
-        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "Hunter", "S - Enhance", },
-        ["OS"] = {"W - Tank", "D - Tank", "S - Ele", "S - Healer", }
+        ["MS"] = {"W - DW", "W - 2H", "R - Dagger", "R - Sword", "D - Feral", "S - Enhance", },
+        ["OS"] = {"W - Tank", "D - Tank", "Hunter", "S - Ele", "S - Healer", }
     },
     [21647] = { -- Fetish of the Sand Reaver
         ["MS"] = {"W - DW", "W - 2H", "S - Enhance", "S - Ele", },
@@ -321,8 +324,8 @@ MS_Items["AQ40"] = {
         ["OS"] = {"P - Shadow", }
     },
     [21608] = { -- Amulet of Vek'nilash
-        ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", "D - Healer", "S - Healer", },
-        ["OS"] = {"S - Enhance", "P - Healer", },
+        ["MS"] = {"Mage", "Warlock", "S - Ele", "D - Balance", "P - Shadow", },
+        ["OS"] = {"S - Enhance", "D - Healer", "P - Healer", "S - Healer", },
         ["Notes"] = "Caster prio"
     },
     [21604] = { -- Bracelets of Royal Redemption
@@ -370,7 +373,8 @@ MS_Items["AQ40"] = {
         ["Notes"] = "Prio for people without DFT"
     },
     [23557] = { -- Larvae of the Great Worm
-        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", "Hunter", },
+        ["PRIO"] = {"Hunter", },
+        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Dagger", "R - Sword", },
         ["Notes"] = "MS Prio for hunters without xbow"
     },
     [21610] = { -- Wormscale Blocker
@@ -464,7 +468,7 @@ MS_Items["AQ40"] = {
         ["OS"] = {"W - Tank", "W - DW", "S - Ele", "S - Healer", }
     },
     [21837] = { -- Anubisath Warhammer
-        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "S - Enhance", },
+        ["MS"] = {"W - Tank", "W - DW", "W - 2H", "R - Sword", "S - Enhance", },
         ["OS"] = {"S - Ele", "S - Healer", }
     },
     [21836] = { -- Ritssyn's Ring of Chaos
@@ -478,18 +482,18 @@ MS_Items["AQ40"] = {
     },
     [21218] = { -- Blue Qiraji Resonating Crystal
         ["MS"] = {},
-        ["Notes"] = "EPGP Raidroll"
+        ["Notes"] = "Freeroll"
     },
     [21323] = { -- Green Qiraji Resonating Crystal
         ["MS"] = {},
-        ["Notes"] = "EPGP Raidroll"
+        ["Notes"] = "Freeroll"
     },
     [21321] = { -- Red Qiraji Resonating Crystal
         ["MS"] = {},
-        ["Notes"] = "GBID"
+        ["Notes"] = "Freeroll"
     },
     [21324] = { -- Yellow Qiraji Resonating Crystal
         ["MS"] = {},
-        ["Notes"] = "EPGP Raidroll"
+        ["Notes"] = "Freeroll"
     },
 }
